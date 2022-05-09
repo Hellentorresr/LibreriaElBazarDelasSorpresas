@@ -1,0 +1,148 @@
+<!-- Actualizado: Abril 21, 2022 v1 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parámetros Generales</title>
+    <!-- Recursos Externos -->
+    <script src="https://kit.fontawesome.com/b038bcffea.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+
+    <!-- Sección de Estilos -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/index_logged.css">
+    <link rel="stylesheet" href="/css/administracion.css">
+
+    <!-- Sección de fuentes-->
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="/img/LogoLibreria.png">
+</head>
+
+<body>
+    <section id="menu">
+        <div class="logo">
+            <img src="/img/LogoLibreria.png" alt="Logo-Libreria">
+            <h2>Parámetros</h2>
+        </div>
+        <div class="items">
+            <li><i class="fa-solid fa-users"></i><a href="adminUsuarios.html">Usuarios</a></li>
+            <li><i class="fa-solid fa-bars-staggered"></i><a href="adminGenero.html">Género</a></li>
+            <li><i class="fa-solid fa-book"></i><a href="adminLibro.html">Libros</a></li>
+            <li><i class="fa-solid fa-feather"></i><a href="adminAutor.html">Autor</a></li>
+            <li><i class="fa-solid fa-percent"></i><a href="adminDescuento.html">Descuento</a></li>
+            <li><i class="fa-solid fa-handshake"></i><a href="adminSocioComer.html">Socio Comercial</a></li>
+            <li><i class="fa-solid fa-location-crosshairs"></i><a href="adminPuntosRetiro.html">Punto de retiro</a></li>
+            <li><i class="fa-solid fa-screwdriver-wrench"></i><a href="adminParametros.html">Parámetros Generales</a></li>
+            </li>
+            <li><i class="fa-solid fa-chart-pie"></i><a href="admiReportes.html">Reportes</a></li>
+            <button type="button" class="cerrarSesion" id="usuarioOk">Cerrar sesión</button>
+        </div>
+    </section>
+    <section id="interfase">
+        <div class="navegacion">
+            <div class="n1">
+                <div class="busqueda">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Busqueda de Parámetro" id="txt-filtro">
+                </div>
+            </div>
+            <div class="perfil">
+                <i class="far fa-bell"></i>
+                <img src="/img/usuarioFotoPerfil.jpg" alt="foto-admin">
+            </div>
+        </div>
+        <h3 class="i-name">Parámetros Generales</h3>
+        <br>
+        <div class="valores">
+            <div class="caja-valores">
+                <!-- <i class="fas fa-plus"></i> -->
+                <div>
+                    <!--   <button class="btn-agregar" id="agregar-param">Agregar</button> -->
+
+                    <i class="fa-solid fa-wrench"></i>
+                    <span> Administración</span>
+
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h1>Agregar Parámetro</h1>
+                            <div class="formulario-parametro">
+                                <!-- Ingreso del parámetro -->
+                                <div class="inputValor">
+                                    <br>
+                                    <label for="txt-parametro-nombre">Nombre*</label>
+                                    <input type="text" id="txt-parametro-nombre">
+                                    </select>
+                                </div>
+                                <!-- Ingreso del parámetro -->
+                                <div class="inputValor">
+                                    <br>
+                                    <label for="txt-parametro-monto">Monto*</label>
+                                    <input type="text" id="txt-parametro-monto">
+                                    </select>
+                                </div>
+                                <div class="confirmacion">
+                                    <br>
+                                    <button class="btn-conf-agregar" id="conf-agregar-param">Registrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="caja-valores">
+                <i class="fa-solid fa-gears"></i>
+                <div>
+                    <h3 id="parametros-cantidad"></h3>
+                    <span>Parámetros</span>
+                </div>
+            </div>
+            <div class="caja-valores">
+                <i class="fa-solid fa-fire"></i>
+                <div>
+                    <h3>0</h3>
+                    <span>Problemas</span>
+                </div>
+            </div>
+            <div class="caja-valores">
+                <i class="fa-solid fa-bell"></i>
+                <div>
+                    <h3>5</h3>
+                    <span>Notificaciones</span>
+                </div>
+            </div>
+        </div>
+        <dir class="tabla">
+            <table width="100%" id="tbl-parametros">
+                <thead>
+
+                    <tr>
+                        <td>Nombre</td>
+                        <td>Monto</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </dir>
+    </section>
+    <!-- 1. Cargar bibliotecas externas -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- 2. Enlazar el servicio general que comunica con el servidor -->
+    <script src="/js/servicio-general.js"></script>
+    <!-- Enlazar los controladores de la página -->
+
+    <script src="/js/adminParametros.js"></script>
+
+</body>
+
+</html>

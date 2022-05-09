@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libreria El bazar de las sorpresas</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/busqueda.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="/img/LogoLibreria.png">
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+
+    <!-- version 1.0 4-10-22  -->
+
+</head>
+
+<body>
+    <section class="header">
+        <div class="cabecera">
+            <a href="/index_logged.html" class="enlace"><img src="/img/LogoLibreria.png" alt="Logo" class="logo"></a>
+            <div class="box">
+                <div class="search-box">
+                    <input type="text" id="search" placeholder="Buscar por autor,título,género,ISBN">
+                    <label for="search" class="icon">
+                    <i class="fas fa-search"></i></label>
+                </div>
+            </div>
+            <div class="titulo_cabecera">
+                <h1>Librería El bazar de las sorpresas</h1>
+            </div>
+        </div>
+
+        <!-- segundo header -->
+        <header class="contenedor-header">
+            <nav class="nav">
+                <div class="enlacedos">
+                    <a href="/index.html"><img src="/img/LogoLibreria.png" alt="Logo" class="logodos"></a>
+                </div>
+                <!-- <input type="checkbox" id="check">
+                <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label> -->
+                <a href="#" class="enlace"><img src="/img/icon.jpg" alt="" class="logo"></a>
+                <div class="opciones-header">
+                    <a id="carrito-ico" href="/carrito.html"><img src="img/shopping-cart.png" width="60%" alt=""></a>
+                    <ul>
+                        <li><a href="perfilUsuario.html">Mi Cuenta </a></li>
+                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="contact-us.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+
+            </nav>
+        </header>
+    </section>
+
+    <section id="sct_cabecera_perfil">
+
+
+        <div class="lista_libros">
+            <table>
+
+                <tbody>
+                    <tr>
+                        <td class="tbl-libros"><img src="/img/libros/El_Nombre_Del_Viento/portada.jpg" style="height: 250px; width: 175px;"></td>
+                        <td class="tbl-libros">
+                            <p class="subtitulo_vinculo"><a href="/perfil_libro.html">El nombre del viento</a></p>
+                            <p class="subtitulo_vinculo2"><a href="/perfil_autor_rd.html">Patrick Rothfuss</a></p>
+                            <p><img src="/img/rating5p.jpg" alt=""></p>
+                            <p class="precios">Precio: ₡ 10,500</p>
+                            <p class="precios">Descuento: ₡ 2,000</p>
+                        </td>
+
+                        <td class="tbl-libros">
+                            <button class="btn-oscuro" id="btn-agregarCarrito">Agregar al carrito</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tbl-libros"><img src="/img/libros/El_temor_de_un/libro2.jpg" style="height: 250px; width: 175px;"></td>
+                        <td class="tbl-libros">
+                            <p class="subtitulo_vinculo"><a href="/en-construccion.html">El temor de un hombre sabio</a></p>
+                            <p class="subtitulo_vinculo2"><a href="/perfil_autor_rd.html">Patrick Rothfuss</a></p>
+                            <p><img src="/img/rating5p.jpg" alt=""></p>
+                            <p class="precios">Precio: ₡ 17,500</p>
+                        </td>
+
+                        <td class="tbl-libros">
+                            <button class="btn-oscuro" id="btn-agregarCarrito2">Agregar al carrito</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tbl-libros"><img src="/img/libros/La_musica_del_silencio/lamusicadelsilencio.jpg" style="height: 250px; width: 175px;"></td>
+                        <td class="tbl-libros">
+                            <p class="subtitulo_vinculo"><a href="/perfil_libro.html">La música del silencio</a></p>
+                            <p class="subtitulo_vinculo2"><a href="/perfil_autor_rd.html">Patrick Rothfuss</a></p>
+                            <p><img src="/img/rating5p.jpg" alt=""></p>
+                            <p class="precios">Precio: ₡ 17,500</p>
+                            <p class="precios">Descuento: ₡ 2,000</p>
+                        </td>
+
+                        <td class="tbl-libros">
+                            <button class="btn-oscuro" id="btn-agregarCarrito3">Agregar al carrito</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <button type="button"><a href="">Sobre Nosotros</a></button>
+            <h3>Copyright © 2022 Librería El bazar de las sorpresas. <br> Todos los derechos reservados</h3>
+        </div>
+    </footer>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="js/perfilAgregarCarrito.js"></script>
+</body>
+
+</html>

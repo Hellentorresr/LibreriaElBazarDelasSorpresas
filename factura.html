@@ -1,0 +1,142 @@
+<!---  Actualizado: Abril 9, 2022 v3 --->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- 1.Enlazar el archivo reset.css -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <!-- 2.Enlazar el archivo factura.css -->
+    <link rel="stylesheet" href="/css/factura.css">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura</title>
+</head>
+
+<body>
+    <div class="page" size='A4'>
+
+        <!-- Cabecera -->
+        <div class="cabecera">
+            <div class="Consecutivo">
+                <div class="consecutivo-electronico">
+                    <p> Consecutivo electrónico </p>
+                    <p> 24593677604005813541358</p>
+                </div>
+            </div>
+            <div class="fecha">
+                <div class="fecha-emision">
+                    <div class="emision"> Fecha: <span class="span"> 11-04-2022</span></div>
+                    <div class="clave"> Clave numérica: <span class="span">250241899630214561235502155716 </span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Información vendor -->
+        <div class="emisor">
+            <div class="titulo">
+                El Bazar de las Sorpresas
+                <p class="emisor-datos">Cédula: ###-###-####</p>
+                <p class="emisor-datos">Dirección: Alajuela, Centro.</p>
+                <p class="emisor-datos">Teléfono: ####-####</p>
+                <p class="emisor-datos">Correo: info@bazardelassorpresas.com</p>
+            </div>
+
+
+            <div class="factura">
+                <div class="factura-info">
+                    Factura electrónica
+                    <p class="factura-datos">############</p>
+                    <p class="factura-datos">Código: ######</p>
+                    <p class="factura-datos">Término de pago: Contado</p>
+                    <p class="factura-datos">Método de pago: Tarjeta</p>
+                    <p class="factura-datos">CRC-Colón</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Información Cliente -->
+        <div class="cliente">
+            <div class="titulo-cliente">Cliente: Cristian Salazar
+                <p>Céd: #-###-####</p>
+                <p>Teléfono: ####-####</p>
+            </div>
+        </div>
+
+
+
+        <hr>
+
+        <!-- Tabla -->
+        <div class="tabla">
+            <table>
+                <tr>
+                    <th> Código </th>
+                    <th> Detalle </th>
+                    <th> Cantidad </th>
+                    <th> Precio Unitario </th>
+                    <th> IVA </th>
+                    <th> Descuentos </th>
+                    <th> Total </th>
+                </tr>
+                <tr>
+                    <td>6128</td>
+                    <td>El nombre del viento</td>
+                    <td>1</td>
+                    <td>₡10000</td>
+                    <td>13%</td>
+                    <td>0.0</td>
+                    <td>₡11300</td>
+                </tr>
+                <tr>
+                    <td>3689</td>
+                    <td>El temor de un hombre sabio</td>
+                    <td>1</td>
+                    <td>₡9000</td>
+                    <td>13%</td>
+                    <td>0.0</td>
+                    <td>₡10170</td>
+                </tr>
+                <tr>
+                    <td>5987</td>
+                    <td>La música del silencio</td>
+                    <td>1</td>
+                    <td>₡8000</td>
+                    <td>13%</td>
+                    <td>0.0</td>
+                    <td>₡9040</td>
+                </tr>
+
+            </table>
+        </div>
+
+        <hr>
+
+        <!-- Calculo -->
+        <div class="calculo">
+            <div class="calculo-total">
+                <p> Total gravado: ₡27.000</p>
+                <p> Subtotal: ₡27.000</p>
+                <p> Descuento: ₡0</p>
+                <p> IVA 13%: ₡3510</p>
+                <p class="total">Total: ₡30.510</p>
+            </div>
+        </div>
+
+        <!-- Pie de página-->
+        <div class="pie">
+            <div class="pie-pagina">
+                <p> Documento creado por El Bazar de las Sorpresas.</p>
+                <p> Autorizada mediante la resolución No. DGT-R-033-2019 del 20 de Junio del 2019.</p>
+                <p> Versión 4.3 de "Anexos y estructuras de los documentos electrónicos.</p>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

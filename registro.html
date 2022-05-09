@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuarios</title>
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/templateHeaderFooter.css">
+    <!-- Agregar Style Sheet de la página en cuestion -->
+    <link rel="stylesheet" href="/css/usuario-registro.css">
+    <link rel="icon" href="/img/LogoLibreria.png">
+    <link rel="icon" href="/Verne/img/LogoLibreria.png">
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <my-header></my-header>
+    <section id="sct-registro">
+        <div class="img_contenedor">
+        </div>
+        <div class="contentBx">
+            <div class="formBx">
+                <form>
+                    <h2>Crear Cuenta</h2>
+                    <div class="linea">
+                        <div class="inputBx">
+                            <label for="txt-nombre">Nombre*</label>
+                            <div class="contenedor-internoInput">
+                                <input type="text" id="txt-nombre" placeholder="Primer nombre" autocomplete="off">
+                                <input type="text" id="txt-nombreDos" placeholder="Segundo nombre" autocomplete="">
+                            </div>
+                        </div>
+                        <!-- <p class="warnings" id="warningNombre"></p> -->
+                        <div class="inputBx">
+                            <label for="txt-apellidoUno">Apellido*</label>
+                            <div class="contenedor-internoInput">
+                                <input type="text" id="txt-apellidoUno" placeholder="Primer apellido" autocomplete="off">
+                                <input type="text" id="txt-apellidoDos" placeholder="Segundo apellido" autocomplete="off">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="linea">
+                        <div class="inputBx">
+                            <label for="slt-genero">Género*</label>
+                            <select id="slt-genero">
+                                <option value="">-- Seleccione una opción --</option>
+                                <option value="1">Femenino</option>
+                                <option value="2">Masculino</option>
+                                <option value="3">Otro</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="linea">
+                        <div class="inputBx">
+                            <label for="txt-correo">Correo electrónico*</label>
+                            <input type="email" id="txt-correo" placeholder="@correo.com">
+                            <p class="warnings" id="warnings"></p>
+                        </div>
+                    </div>
+                    <div class="linea">
+                        <div class="inputBx">
+                            <label for="slt-tipoIdentificacion">Tipo de identificación*</label>
+                            <select id="slt-tipoIdentificacion">
+                                <option value="">-- Seleccione una opción --</option>
+                                <option value="1">Nacional</option>
+                                <option value="2">Residente</option>
+                                <option value="3">Dimex</option>
+                                <option value="4">Pasaporte</option>
+                            </select>
+                            <input type="text" mask="0-0000-0000" id="txtNumCedula" placeholder="Número de identificación">
+                        </div>
+                    </div>
+                    <div class="linea">
+                        <div class="inputBx">
+                            <label for="slt_provincia">Para agregar su dirección favor seleccione su: *</label>
+                            <select id="slt_provincia">
+                                <option value="">-- Provincia --</option>
+                            </select>
+                        </div>
+                        <div class="inputBx">
+                            <label for="slt_canton">Su cantón*</label>
+                            <select id="slt_canton">
+                                <option value="">-- Cantón --</option>
+                            </select>
+                        </div>
+                        <div class="inputBx">
+                            <label for="slt_distrito">Su distrito*</label>
+                            <select id="slt_distrito">
+                                <option value="">-- Distrito* --</option>
+                            </select>
+                        </div>
+                        <div class="inputBx">
+                            <label for="txt-sennasExactas">Agrege su dirección con señas exactas</label>
+                            <textarea id="txt-sennasExactas" cols="10" rows="5"></textarea>
+                        </div>
+                        <div class="inputBx">
+                            <h3>Puedes agregar tu ubicación (Opcional)</h3>
+                            <div class="botonUbicacion">
+                                <button type="button" onclick="getLocation()"><img src="/img/IconoMap.png" height="60px"
+                                        width="80px">
+                                    <h4>Obtener ubicación</h4>
+                                </button>
+                            </div>
+                            <p id="latitud"></p>
+                            <p id="longitud"></p>
+                        </div>
+                    </div>
+                    <div class="linea">
+                        <div class="inputBx">
+                            <label for="slt-generoLiterario">Favor seleccione su preferencia en género
+                                literarios</label>
+                            <select id="slt-generoLiterario">
+                                <option value="">-- Seleccione una opción --</option>
+                                <option value="2">Fantasía epica</option>
+                                <option value="3">Terror</option>
+                                <option value="4">Realismo mágico</option>
+                            </select>
+                        </div>
+                        <div class="inputBx">
+                            <label for="slt-autor">Favor seleccione sus autores favoritos</label>
+                            <select id="slt-autor">
+                                <option value="">-- Seleccione una opción --</option>
+                                <option value="1">Patrick Rothfuss</option>
+                                <option value="2">Isabel Allende</option>
+                                <option value="3">Stephen King</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="linea">
+                        <div class="inputBx">
+                            <label for="txt-contrasenna">Contraseña*</label>
+                            <input type="password" id="txt-contrasenna" onkeyup="validate()">
+                        </div>
+                        <div class="inputBx">
+                            <label for="txt-confirmacion">Confirmación de contraseña*</label>
+                            <input type="password" id="txt-confirmacion">
+                            <div class="errors">
+                                <ul class="contraUl">
+                                    <li id="upper">Al menos una letra Mayúscula</li>
+                                    <li id="lower">Al menos una letra minúscula</li>
+                                    <li id="special_char">Al menos un símbolo especial</li>
+                                    <li id="number">Al menos un número</li>
+                                    <li id="length">La contraseña debe contener al menos 8 caracteres y maximo 12</li>
+                                </ul>
+                            </div>
+                            <p class="warnings" id="warningContrasenna"></p>
+                        </div>
+                    </div>
+                    <div class="linea">
+                        <div class="inputBx otro">
+                            <label for="image">Agregar foto de perfil <i class="fa fa-user-circle"
+                                    aria-hidden="true"></i></label>
+                            <div class="fotoPer">
+                                <img id="image">
+                            </div>
+                            <div>
+                                <button type="button" id="btn_foto">Subir foto</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inputBx">
+                        <button type="button" id="btn-registrar" class="btn-oscuro">Registrar</button>
+                    </div>
+                    <div class="inputBx">
+                        <h3>Añadir metodo de pago</h3>
+                        <a href="/agregarTarjeta.html" class="active">Aqui</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--  <footer>
+        <div class="footer">
+            <button type="button"><a href="">Sobre Nosotros</a></button>
+            <h3>Copyright © 2022 Librería El bazar de las sorpresas. <br> Todos los derechos reservados</h3>
+        </div>
+    </footer> -->
+    <my-footer></my-footer>
+    <script src="/js/headerTemplate.js"></script>
+    <script src="js/indexMenuVal.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/js/servicio-general.js"></script>
+    <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+    <script src="/js/distribucion-cr.js"></script>
+    <script src="/js/usuarioRegistroValidaciones.js"></script>
+
+</body>
+
+</html>

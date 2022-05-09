@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libreria El bazar de las sorpresas</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/perfil_autor.css">
+    <link rel="stylesheet" href="/css/metodos-pago.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="/img/LogoLibreria.png">
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+
+    <!-- version 1.0 4-10-22  -->
+
+</head>
+
+<body>
+    <section class="header">
+        <div class="cabecera">
+            <a href="/index_logged.html" class="enlace"><img src="/img/LogoLibreria.png" alt="Logo" class="logo"></a>
+            <div class="box">
+                <div class="search-box">
+                    <input type="text" id="search" placeholder="Buscar por autor,título,género,ISBN">
+                    <label for="search" class="icon">
+                    <i class="fas fa-search"></i></label>
+                </div>
+            </div>
+            <div class="titulo_cabecera">
+                <h1>Librería El bazar de las sorpresas</h1>
+            </div>
+        </div>
+
+        <!-- segundo header -->
+        <header class="contenedor-header">
+            <nav class="nav">
+                <div class="enlacedos">
+                    <a href="/index.html"><img src="/img/LogoLibreria.png" alt="Logo" class="logodos"></a>
+                </div>
+                <!-- <input type="checkbox" id="check">
+                <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label> -->
+                <a href="#" class="enlace"><img src="/img/icon.jpg" alt="" class="logo"></a>
+                <div class="opciones-header">
+                    <a id="carrito-ico" href="/carrito.html"><img src="img/shopping-cart.png" width="60%" alt=""></a>
+                    <ul>
+                        <li><a href="perfilUsuario.html">Mi Cuenta </a></li>
+                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="contact-us.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+
+            </nav>
+        </header>
+
+<div class="container">
+
+    <form action="">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">Dirección de facturación</h3>
+
+                <div class="inputBox">
+                    <span>Provincia:</span>
+                    <input id="slt_provincia"type="text" placeholder="Escribe la provincia">
+                </div>
+                <div class="inputBox">
+                    <span>Cantón :</span>
+                    <input id="slt_canton"type="email" placeholder="Escribe el cantón">
+                </div>
+                <div class="inputBox">
+                    <span>Distrito :</span>
+                    <input id="slt_distrito"type="email" placeholder="Escribe el distrito">
+                </div>
+                <div class="inputBox">
+                    <span>Dirección exacta :</span>
+                    <input id="slt_direcionExacta"type="email" placeholder="Escribe la dirección">
+                   
+                </div>
+                <div class="inputBox">
+                    <span>Código postal :</span>
+                    <input id="codigo-postal"type="text" placeholder="123 456">
+                </div>
+
+              
+
+            </div>
+
+            <div class="col">
+
+                <h2 class="title">Cuenta</h2>
+
+                <div class="inputBox">
+                    <span>tipos de tarjeta :</span>
+                    <img src="img/visa.png" alt="">
+                    <img src="img/mastercard.png">
+                </div>
+                <div class="inputBox">
+                    <span>Nombre en la tarjeta :</span>
+                    <input id="nombre-tarjeta" type="text" placeholder="Ricardo alvarado g.">
+                </div>
+                <div class="inputBox">
+                    <span>Número de tarjeta :</span>
+                    <input id= "numero-tarjeta" type="number" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="inputBox">
+                    <span>Mes de vencimiento</span>
+                    <input id="mes-vencimiento"type="text" placeholder="Enero">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>Año de vencimiento:</span>
+                        <input id="anno-vencimiento"type="number" placeholder="2022">
+                    </div>
+                    <div class="inputBox">
+                        <span>Código CVC :</span>
+                        <input id="codigo-cvc"type="text" placeholder="123">
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+    <div class="botones">
+     <button href="perfilUsuario.html" id="btn-Guardar">
+        <input type="submit" value="Guardar" class="submit-btn">
+        
+     </button>
+     <button>
+        <input type="submit" value="Cancelar" class="submit-btn">
+     </button>
+     <button>
+        <input type="submit" value="Eliminar" class="submit-btn-1">
+     </button>
+     
+    </div>
+       
+    </form>
+
+</div> 
+<my-footer></my-footer>
+    <script src="/js/headerTemplate.js" type="text/javascript" defer></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/js/servicio-general.js"></script>
+    <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+    <script src="/js/distribucion-cr.js"></script>
+    <script src="/js/usuarioRegistroValidaciones.js"></script>
+    <script src="/js/usuarioRegistroCedula.js"></script>   
+    
+</body>
+</html>

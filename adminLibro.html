@@ -1,0 +1,251 @@
+<!-- Actualizado: Abril 16, 2022 v5 -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros</title>
+
+    <!-- Recursos Externos -->
+    <script src="https://kit.fontawesome.com/b038bcffea.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+
+    <!-- Sección de Estilos -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/index_logged.css">
+    <link rel="stylesheet" href="/css/administracion.css">
+
+    <!-- Sección de fuentes-->
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+
+
+    <link rel="icon" href="/img/LogoLibreria.png">
+
+</head>
+
+<body>
+
+    <section id="menu">
+        <div class="logo">
+            <img src="/img/LogoLibreria.png" alt="Logo-Libreria">
+            <h2>Administrador</h2>
+        </div>
+        <div class="items">
+            <li><i class="fa-solid fa-users"></i><a href="adminUsuarios.html">Usuarios</a></li>
+            <li><i class="fa-solid fa-bars-staggered"></i><a href="adminGenero.html">Género</a></li>
+            <li><i class="fa-solid fa-book"></i><a href="adminLibro.html">Libros</a></li>
+            <li><i class="fa-solid fa-feather"></i><a href="adminAutor.html">Autor</a></li>
+            <li><i class="fa-solid fa-percent"></i><a href="adminDescuento.html">Descuento</a></li>
+            <li><i class="fa-solid fa-handshake"></i><a href="adminSocioComer.html">Socio Comercial</a></li>
+            <li><i class="fa-solid fa-location-crosshairs"></i><a href="adminPuntosRetiro.html">Punto de retiro</a></li>
+            <li><i class="fa-solid fa-screwdriver-wrench"></i><a href="adminParametros.html">Parámetros Generales</a></li>
+            <li><i class="fa-solid fa-chart-pie"></i><a href="admiReportes.html">Reportes</a></li>
+            <button type="button" class="cerrarSesion" id="usuarioOk">Cerrar sesión</button>
+        </div>
+    </section>
+
+    <section id="interfase">
+        <div class="navegacion">
+            <div class="n1">
+                <div class="busqueda">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Busqueda" id="txt-filtro">
+                </div>
+            </div>
+
+            <div class="perfil">
+                <i class="far fa-bell"></i>
+                <img src="/img/usuarioFotoPerfil.jpg" alt="foto-admin">
+            </div>
+        </div>
+
+        <h3 class="i-name">Libros</h3>
+        <div class="valores">
+            <div class="caja-valores">
+                <i class="fas fa-plus"></i>
+                <div>
+                    <button class="btn-agregar" id="agregar-genero">Agregar</button>
+
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h1>Agregar Libro</h1>
+                            <br>
+                            <div class="formulario-autor">
+                                <!-- Ingreso del nombre del libro -->
+                                <div class="inputValor">
+                                    <label for="txt-libro-nombre">Titulo*</label>
+                                    <input type="text" id="txt-libro-nombre">
+                                    </select>
+                                </div>
+
+                                <!-- Ingreso del número del ISBN -->
+                                <div class="inputValor">
+                                    <label for="txt-libro-isbn">ISBN*</label>
+                                    <div class="contenedor-internoInput">
+                                        <input type="text" id="txt-libro-isbn">
+                                    </div>
+                                </div>
+
+                                <!-- Ingreso del autor del libro -->
+                                <div class="inputValor">
+                                    <label for="txt-libro-autor">Autor*</label>
+                                    <div class="contenedor-internoInput">
+                                        <input type="text" id="txt-libro-autor">
+                                    </div>
+                                </div>
+
+                                <!-- Ingreso de la Editorial del libro -->
+                                <div class="inputValor">
+                                    <label for="txt-libro-editorial">Editorial*</label>
+                                    <div class="contenedor-internoInput">
+                                        <input type="text" id="txt-libro-editorial">
+                                    </div>
+                                </div>
+
+                                <!-- Ingreso de la Editorial del libro -->
+                                <div class="inputValor">
+                                    <label for="txt-libro-costo">Costo*</label>
+                                    <div class="contenedor-internoInput">
+                                        <input type="text" id="txt-libro-costo">
+                                    </div>
+                                </div>
+
+                                <!-- Ingreso de la fecha de publicación del libro -->
+                                <div class="inputValor">
+                                    <label for="txt-libro-publicacion">Publicación*</label>
+                                    <div class="contenedor-internoInput">
+                                        <input type="date" id="txt-libro-publicacion">
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Ingreso del Género de libro -->
+                                <div class="inputValor">
+                                    <label for="txt-libro-genero">Género*</label>
+                                    <div class="contenedor-internoInput">
+                                        <select id="slt-libro-genero">
+                                        <option value="">-- Seleccione una opción --</option>
+                                        <option value="Terror">Terror</option>
+                                        <option value="Fantasía épica">Fantasía épica</option>
+                                        <option value="Ciencia Ficción">Ciencia Ficción</option>
+                                        <option value="Poesía">Poesía</option>
+                                    </select>
+                                    </div>
+                                </div>
+
+                                <!-- Ingreso de la reseña del libro -->
+                                <div class="inputValor">
+                                    <label for="txt-libro-resenna">Reseña*</label>
+                                    <div class="contenedor-internoInput">
+                                        <textarea name="" id="txt-libro-resenna" cols="20" rows="10"></textarea>
+                                    </div>
+                                </div>
+
+                                <!-- Ingreso de los premios del libro -->
+                                <div class="inputValor">
+                                    <label for="txt-libro-premio">Premios*</label>
+                                    <div class="contenedor-internoInput">
+                                        <input type="text" id="txt-libro-premio">
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Ingreso de la portada del libro -->
+                                <div class="inputValor">
+                                    <label for="img-libro-portada" class="portada"></label>
+                                    <div class="form-file_action">
+                                        <div class="fotoPer">
+                                            <img id="image">
+                                        </div>
+                                        <div>
+                                            <button type="button" id="btn_foto">Subir foto</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="confirmacion">
+                                    <button class="btn-conf-agregar" id="conf-agregar-li">Agregar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="caja-valores">
+                <i class="fas fa-book"></i>
+                <div>
+                    <h3 id="libros-cantidad"></h3>
+                    <span>Libros</span>
+                </div>
+            </div>
+
+            <div class="caja-valores">
+                <i class="fa-solid fa-toggle-on"></i>
+                <div>
+                    <h3 id="libros-activos"></h3>
+                    <span>Activos</span>
+                </div>
+            </div>
+
+            <div class="caja-valores">
+                <i class="fa-solid fa-sack-dollar"></i>
+                <div>
+                    <h3 id="libros-valor"></h3>
+                    <span>Valor en Libros</span>
+                </div>
+            </div>
+        </div>
+
+        <dir class="tabla">
+            <table width="100%" id="tbl-libros">
+                <thead>
+                    <tr>
+                        <td>Portada</td>
+                        <td>Nombre</td>
+                        <td>ISBN</td>
+                        <td>Autor</td>
+                        <td>Editorial</td>
+                        <td>publicación</td>
+                        <td>Género</td>
+                        <td>Costo</td>
+                        <td class="activo">Estado</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+
+                    </tr>
+                </tbody>
+            </table>
+        </dir>
+
+
+    </section>
+
+    <!-- 1. Cargar bibliotecas externas -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+
+    <!-- 2. Enlazar el servicio general que comunica con el servidor -->
+    <script src="/js/servicio-general.js"></script>
+
+    <!-- Enlazar los controladores de la página -->
+    <script src="/js/adminLibro.js"></script>
+
+
+
+</body>
+
+</html>

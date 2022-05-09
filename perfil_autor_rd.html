@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libreria El bazar de las sorpresas</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/perfil_autor.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="/img/LogoLibreria.png">
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+
+    <!-- version 1.0 4-10-22  -->
+
+</head>
+
+<body>
+    <section class="header">
+        <div class="cabecera">
+            <a href="/index_logged.html" class="enlace"><img src="/img/LogoLibreria.png" alt="Logo" class="logo"></a>
+            <div class="box">
+                <div class="search-box">
+                    <input type="text" id="search" placeholder="Buscar por autor,título,género,ISBN">
+                    <label for="search" class="icon">
+                    <i class="fas fa-search"></i></label>
+                </div>
+            </div>
+            <div class="titulo_cabecera">
+                <h1>Librería El bazar de las sorpresas</h1>
+            </div>
+        </div>
+
+        <!-- segundo header -->
+        <header class="contenedor-header">
+            <nav class="nav">
+                <div class="enlacedos">
+                    <a href="/index.html"><img src="/img/LogoLibreria.png" alt="Logo" class="logodos"></a>
+                </div>
+                <!-- <input type="checkbox" id="check">
+                <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label> -->
+                <a href="#" class="enlace"><img src="/img/icon.jpg" alt="" class="logo"></a>
+                <div class="opciones-header">
+                    <a id="carrito-ico" href="/carrito.html"><img src="img/shopping-cart.png" width="60%" alt=""></a>
+                    <ul>
+                        <li><a href="perfilUsuario.html">Mi Cuenta </a></li>
+                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="contact-us.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+
+            </nav>
+        </header>
+    </section>
+
+    <section id="sct_cabecera_perfil">
+
+        <div class="general">
+            <div class="marco_foto">
+                <img id="foto_autor" src="img/autores/Patrick_Rothfuss.jpg" width="250" height="333" alt="autor">
+            </div>
+
+            <div class="datos_general">
+                <div class="datos_fila">
+                    <div class="datos_autor">
+                        <p class="titulo">Patrick Rothfuss</p>
+                    </div>
+
+                    <div class="datos_autor">
+                        <p class="subtitulo">Masculino</p>
+                    </div>
+
+                </div>
+
+                <div class="datos_fila">
+                    <div class="datos_autor">
+                        <p class="subtitulo">Estados Unidos</p>
+                    </div>
+
+                    <div class="datos_autor">
+                        <p class="subtitulo">6-Junio-1973</p>
+                    </div>
+
+                </div>
+
+                <div class="resenna">
+                    <p>Es un escritor estadounidense de fantasía y profesor adjunto de literatura y filología inglesa en la Universidad de Wisconsin. Es el autor de la serie Crónica del asesino de reyes, que fue rechazada por varias editoriales antes de
+                        que el primer libro de la serie El nombre del viento fuese publicado en el año 2007. Obtuvo muy buenas críticas y se convirtió en un éxito de ventas.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="sct_listas">
+            <div class="premios">
+                <ul class="listado_premios">
+                    <li>Escritores del futuro</li>
+                    <li>Premio pluma</li>
+                    <li>Mejor libro del año</li>
+                    <li>Mejor fantasía épica</li>
+                    <li>Premio Leyenda de David Gemmell</li>
+                </ul>
+            </div>
+
+            <div class="lista_libros">
+                <table>
+
+                    <tbody>
+                        <tr>
+                            <td class="tbl-libros"><img src="/img/libros/El_Nombre_Del_Viento/portada.jpg" style="height: 150px; width: 110px;"></td>
+                            <td class="tbl-libros">
+                                <p class="subtitulo_vinculo"><a href="/perfil_libro.html">El nombre del viento</a></p>
+                                <p><img src="/img/rating5p.jpg" alt=""></p>
+                            </td>
+                            <td class="tbl-libros">
+                                <p class="precios">Precio: ₡ 10,500</p>
+                                <p class="precios">Descuento: ₡ 2,000</p>
+                            </td>
+                            <td class="tbl-libros">
+                                <button class="btn-oscuro" id="btn-agregarCarrito">Agregar al carrito</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tbl-libros"><img src="/img/libros/El_temor_de_un/libro2.jpg" style="height: 150px; width: 110px;"></td>
+                            <td class="tbl-libros">
+                                <p class="subtitulo_vinculo">El temor de un hombre sabio</p>
+                                <p><img src="/img/rating5p.jpg" alt=""></p>
+                            </td>
+                            <td class="tbl-libros">
+                                <p class="precios">Precio: ₡ 17,500</p>
+                                <p class="precios"></p>
+                            </td>
+                            <td class="tbl-libros">
+                                <button class="btn-oscuro" id="btn-agregarCarrito2">Agregar al carrito</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tbl-libros"><img src="/img/libros/La_musica_del_silencio/lamusicadelsilencio.jpg" style="height: 150px; width: 110px;"></td>
+                            <td class="tbl-libros">
+                                <p class="subtitulo_vinculo">La música del silencio</p>
+                                <p><img src="/img/rating5p.jpg" alt=""></p>
+                            </td>
+                            <td class="tbl-libros">
+                                <p class="precios">Precio: ₡ 17,500</p>
+                                <p class="precios">Descuento: ₡ 2,000</p>
+                            </td>
+                            <td class="tbl-libros">
+                                <button class="btn-oscuro" id="btn-agregarCarrito3">Agregar al carrito</button>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <button type="button"><a href="">Sobre Nosotros</a></button>
+            <h3>Copyright © 2022 Librería El bazar de las sorpresas. <br> Todos los derechos reservados</h3>
+        </div>
+    </footer>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="js/perfilAgregarCarrito.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libreria El bazar de las sorpresas</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="css/templateHeaderFooter.css">
+    <link rel="stylesheet" href="/css/perfil_libro.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="/img/LogoLibreria.png">
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+
+    <!-- version 1.0 4-10-22  -->
+
+</head>
+
+<body>
+    <my-header></my-header>
+
+    <section id="sct_cabecera_perfil">
+
+        <div class="carusel">
+
+            <div class="ctrl-ant">
+                <a class="ant" onclick="plusSlides(-1)">&#10094;</a>
+            </div>
+            <div class="contenedor_imagenes">
+                <div class="mySlides fade">
+                    <div class="numberText">1 / 4</div>
+                    <img src="img/libros/El_Nombre_Del_Viento/portada.jpg" style="width: 418.89px; height: 646px;">
+
+                </div>
+                <div class="mySlides fade">
+                    <div class="numberText">2 / 4</div>
+                    <img src="img/libros/El_Nombre_Del_Viento/pag1v2.png" style="width: 418.89px; height: 646px;">
+
+                </div>
+                <div class="mySlides fade">
+                    <div class="numberText">3 / 4</div>
+                    <img src="img/libros/El_Nombre_Del_Viento/pag2v2.png" style="width: 418.89px; height: 646px;">
+
+                </div>
+                <div class="mySlides fade">
+                    <div class="numberText">4 / 4</div>
+                    <img src="img/libros/El_Nombre_Del_Viento/dorsov2.jpg" style="width: 418.89px; height: 646px;">
+
+                </div>
+                <!-- botones de ant y sig -->
+
+            </div>
+            <div class="ctrl-sig">
+                <a class="sig" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+        <br>
+        <div class="atributos_libro">
+            <div>
+                <table class="tabla_libro">
+                    <tbody>
+                        <tr>
+                            <td class="titulo">El nombre del viento</td>
+                            <td><img src="img/rating5p.jpg" alt=""></td>
+                        </tr>
+                        <tr>
+
+                            <td class="subtitulo">ISBN: 9780756413712</td>
+                        </tr>
+                        <tr>
+                            <td class="subtitulo"><a href="/perfil_autor_rd.html">Patrick Rothfuss</a></td>
+                        </tr>
+                        <tr>
+                            <td class="subtitulo">DeBolsillo</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="resenna">
+                <p>Atípica, profunda y sincera, El nombre del viento es una novela de aventuras, de historias dentro de otras historias, de misterio, de amistad, de amor, de magia y de superación. La novela a consagrado a Patrick Rothfuss como fénomemo editorial
+                    de los últimos años.
+                </p>
+                <br>
+                <p>
+                    "He robado princesas a reyes agónicos. Incendié la ciudad de Trebon. He pasado la noche con Felurian y he despertado vivo y cuerdo. Me expulsaron de la Universidad a una edad a la que a la mayoría todavía no los dejan entrar. He recorrido de noche caminos
+                    de los que otros no se atreven a hablar ni siquiera de día. He hablado con dioses, he amado a mujeres y he escrito canciones que hacen llorar a los bardos. Me llamo Kvothe. Quizá hayas oído hablar de mí."
+                </p>
+            </div>
+            <div class="premios">
+                <ul class="listado_premios">
+                    <li>Premio Quill (2007)​</li>
+                    <li>Best Books of the Year (2007) - Publishers Weekly - Science Fiction/Fantasy/Horror</li>
+                    <li>Best Book of 2007 - FantasyLiterature.com</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- <footer>
+        <div class="footer">
+            <button type="button"><a href="">Sobre Nosotros</a></button>
+            <h3>Copyright © 2022 Librería El bazar de las sorpresas. <br> Todos los derechos reservados</h3>
+        </div>
+    </footer> -->
+     <my-footer></my-footer>
+     <script src="js/headerTemplate.js"></script>
+     <script src="js/indexMenuVal.js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="js/perfilAgregarCarrito.js"></script>
+
+    <script src="js/perfil_libro.js"></script>
+
+</body>
+
+</html>

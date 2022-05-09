@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libreria El bazar de las sorpresas</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/perfil_autor.css">
+    <link rel="stylesheet" href="css/templateHeaderFooter.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="/img/LogoLibreria.png">
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+
+    <!-- version 1.0 4-10-22  -->
+
+</head>
+
+<body>
+
+    <my-header></my-header>
+
+    <section id="sct_cabecera_perfil">
+
+        <div class="general">
+            <div id="foto_autor" class="marco_foto">
+                <!-- <img id="foto_autor" width="250" height="333" alt="autor"> -->
+            </div>
+
+            <div class="datos_general">
+                <div class="datos_fila">
+                    <div class="datos_autor">
+                        <p id="tituloAutor" class="titulo"></p>
+                    </div>
+
+                    <div class="datos_autor">
+                        <p id="generoAutor" class="subtitulo"></p>
+                    </div>
+
+                </div>
+
+                <div class="datos_fila">
+                    <div class="datos_autor">
+                        <p id="paisAutor" class="subtitulo"></p>
+                    </div>
+
+                    <div class="datos_autor">
+                        <p id="nacimientoAutor" class="subtitulo"></p>
+                        <p id="defuncionAutor" class="subtitulo"></p>
+                    </div>
+
+                </div>
+
+                <div id="resennaAutor" class="resenna">
+                    <p>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="sct_listas">
+            <div class="premios">
+                <ul class="listado_premios">
+                    <li>Alex</li>
+                    <li>Balrog</li>
+                    <li>Black Quill</li>
+                    <li>British Fantasy Society</li>
+                    <li>Canadian Booksellers Association</li>
+                    <li>Deutscher Phantastik Preis</li>
+                    <li>Gandalf</li>
+                    <li>Horror Writers Association</li>
+                    <li>Hugo</li>
+                    <li>International Horror Guild</li>
+                    <li>Locus</li>
+                    <li>Mundial de Fantasía</li>
+                </ul>
+            </div>
+
+            <div class="lista_libros">
+                <table>
+
+                    <tbody>
+                        <tr>
+                            <td class="tbl-libros"><img src="/img/libros/IT/portada.jpg" style="height: 150px; width: 110px;"></td>
+                            <td class="tbl-libros">
+                                <p class="subtitulo_vinculo"><a href="/en-construccion.html">IT (Eso)</a></p>
+                                <p><img src="/img/rating5p.jpg" alt=""></p>
+                            </td>
+                            <td class="tbl-libros">
+                                <p class="precios">Precio: ₡ 10,500</p>
+                                <p class="precios">Descuento: ₡ 2,000</p>
+                            </td>
+                            <td class="tbl-libros">
+                                <!-- <button class="btn-oscuro" id="btn-agregarCarrito">Agregar al carrito</button> -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tbl-libros"><img src="/img/libros/resplandor.jpg" style="height: 150px; width: 110px;"></td>
+                            <td class="tbl-libros">
+                                <p class="subtitulo_vinculo">El resplandor</p>
+                                <p><img src="/img/rating5p.jpg" alt=""></p>
+                            </td>
+                            <td class="tbl-libros">
+                                <p class="precios">Precio: ₡ 17,500</p>
+                                <p class="precios"></p>
+                            </td>
+                            <td class="tbl-libros">
+                                <!-- <button class="btn-oscuro" id="btn-agregarCarrito">Agregar al carrito</button> -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tbl-libros"><img src="/img/libros/cujo.jpg" style="height: 150px; width: 110px;"></td>
+                            <td class="tbl-libros">
+                                <p class="subtitulo_vinculo">Cujo</p>
+                                <p><img src="/img/rating5p.jpg" alt=""></p>
+                            </td>
+                            <td class="tbl-libros">
+                                <p class="precios">Precio: ₡ 17,500</p>
+                                <p class="precios">Descuento: ₡ 2,000</p>
+                            </td>
+                            <td class="tbl-libros">
+                                <!-- <button class="btn-oscuro" id="btn-agregarCarrito">Agregar al carrito</button> -->
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <my-footer></my-footer>
+
+    <!-- <script src="js/seleccionMenu.js"></script> -->
+    <!-- <script src="js/index.js"></script> -->
+
+    <script src="js/headerTemplate.js"></script>
+    <script src="js/busqueda.js"></script>
+    <script src="js/indexMenuVal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+    <!-- 2. Enlazar el servicio general que comunica con el servidor -->
+    <script src="/js/servicio-general.js"></script>
+    <script src="js/busqueda.js"></script>
+
+
+    <script src="js/perfil_autor.js"></script>
+</body>
+
+</html>

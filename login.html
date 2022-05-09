@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libreria El bazar de las sorpresas</title>
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/templateHeaderFooter.css">
+
+    <!-- Agregar Style Sheet de la página en cuestion -->
+    <link rel="stylesheet" href="/css/login.css">
+    <!-- Fuentes -->
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="/img/LogoLibreria.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+
+
+    <!-- Clase de template de Header & Footer -->
+
+</head>
+
+<body>
+    <my-header></my-header>
+    <section class="seccionDos">
+        <div class="imgBx">
+        </div>
+        <div class="contentBx">
+            <div class="formBx">
+                <h2>Ingresar</h2>
+                <form>
+                    <div class="inputBx">
+                        <label for="">Correo electrónico</label>
+                        <input type="text" id="txt-correoIngresar" placeholder="@correo">
+                    </div>
+                    <div class="inputBx">
+                        <label for="">Contraseña</label>
+                        <input type="password" id="txt-contrasennaaa">
+                    </div>
+
+                    <div class="inputBx">
+                        <button type="button" id="btn-IngresarD">Ingresar</button>
+                    </div>
+
+                    <div class="inputBx">
+                        <h3>Olvidaste tu contraseña</h3>
+                        <button type="button" id="btn-recuperarContrasenna"> <a href="" class="linkRecuperar">Recuperar
+                                contraseña</a></button>
+                    </div>
+
+                    <div class="inputBx">
+                        <p>No tienes una cuenta? <a href="registro.html">Registrate aqui</a>
+                        </p>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <my-footer></my-footer>
+
+    <script src="/js/headerTemplate.js"></script>
+    <script src="js/indexMenuVal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <script src="/js/usuariosExistentes.js"></script>
+    <script src="/js/usuario-iniciarSecion.js"></script> -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/js/servicio-general.js"></script>
+    <script src="/js/autenticar.js"></script>
+</body>
+
+</html>

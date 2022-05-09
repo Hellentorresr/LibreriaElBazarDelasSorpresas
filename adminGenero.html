@@ -1,0 +1,168 @@
+<!-- Actualizado: Abril 16, 2022 v5 -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Géneros</title>
+
+    <!-- Recursos Externos -->
+    <script src="https://kit.fontawesome.com/b038bcffea.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+
+    <!-- Sección de Estilos -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/index_logged.css">
+    <link rel="stylesheet" href="/css/administracion.css">
+
+    <!-- Sección de fuentes-->
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+
+
+    <link rel="icon" href="/img/LogoLibreria.png">
+
+</head>
+
+<body>
+
+    <section id="menu">
+        <div class="logo">
+            <img src="/img/LogoLibreria.png" alt="Logo-Libreria">
+            <h2>Administrador</h2>
+        </div>
+        <div class="items">
+            <li><i class="fa-solid fa-users"></i><a href="adminUsuarios.html">Usuarios</a></li>
+            <li><i class="fa-solid fa-bars-staggered"></i><a href="adminGenero.html">Género</a></li>
+            <li><i class="fa-solid fa-book"></i><a href="adminLibro.html">Libros</a></li>
+            <li><i class="fa-solid fa-feather"></i><a href="adminAutor.html">Autor</a></li>
+            <li><i class="fa-solid fa-percent"></i><a href="adminDescuento.html">Descuento</a></li>
+            <li><i class="fa-solid fa-handshake"></i><a href="adminSocioComer.html">Socio Comercial</a></li>
+            <li><i class="fa-solid fa-location-crosshairs"></i><a href="adminPuntosRetiro.html">Punto de retiro</a></li>
+            <li><i class="fa-solid fa-screwdriver-wrench"></i><a href="adminParametros.html">Parámetros Generales</a></li>
+            <li><i class="fa-solid fa-chart-pie"></i><a href="admiReportes.html">Reportes</a></li>
+            <button type="button" class="cerrarSesion" id="usuarioOk">Cerrar sesión</button>
+        </div>
+    </section>
+
+    <section id="interfase">
+        <div class="navegacion">
+            <div class="n1">
+                <div class="busqueda">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Busqueda" id="txt-filtro">
+                </div>
+            </div>
+
+            <div class="perfil">
+                <i class="far fa-bell"></i>
+                <img src="/img/usuarioFotoPerfil.jpg" alt="foto-admin">
+            </div>
+        </div>
+
+        <h3 class="i-name">Géneros</h3>
+        <div class="valores">
+            <div class="caja-valores">
+                <i class="fas fa-plus"></i>
+                <div>
+                    <button class="btn-agregar" id="agregar-genero">Agregar</button>
+
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h1>Agregar Género</h1>
+                            <br>
+                            <div class="formulario-autor">
+
+                                <!-- Ingreso del nombre del género -->
+                                <div class="inputValor">
+                                    <label for="txt-genero-nombre">Agregar género</label>
+                                    <input type="text" id="txt-genero-nombre">
+                                    </select>
+                                </div>
+
+                                <!-- Ingreso del código del género -->
+                                <div class="inputValor">
+                                    <label for="txt-genero-codigo">Código</label>
+                                    <div class="contenedor-internoInput">
+                                        <input type="text" id="txt-genero-codigo">
+                                    </div>
+                                </div>
+
+
+                                <div class="confirmacion">
+                                    <button class="btn-conf-agregar" id="conf-agregar">Agregar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="caja-valores">
+                <i class="fas fa-bookmark"></i>
+                <div>
+                    <h3 id="generos-cantidad"></h3>
+                    <span>Géneros</span>
+                </div>
+            </div>
+            <div class="caja-valores">
+                <i class="fas fa-book"></i>
+                <div>
+                    <h3 id="libros-cantidad"></h3>
+                    <span>Libros</span>
+                </div>
+            </div>
+            <div class="caja-valores">
+                <i class="fas fa-feather"></i>
+                <div>
+                    <h3 id="autores-cantidad"></h3>
+                    <span>Autores</span>
+                </div>
+            </div>
+        </div>
+
+        <dir class="tabla">
+            <table width="100%" id="tbl-generos">
+                <thead>
+                    <tr>
+                        <td>Código</td>
+                        <td>Género</td>
+
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="usuarios"></td>
+                        <td class="people-registro"></td>
+                        <td class="activo"></td>
+                        <td class="edit"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </dir>
+
+    </section>
+
+    <!-- 1. Cargar bibliotecas externas -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- 2. Enlazar el servicio general que comunica con el servidor -->
+    <script src="/js/servicio-general.js"></script>
+
+    <!-- Enlazar los controladores de la página -->
+    <script src="/js/adminGenero.js"></script>
+
+
+
+
+</body>
+
+</html>

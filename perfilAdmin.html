@@ -1,0 +1,135 @@
+<!-- Actualizado: Abril 16, 2022 v5 -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <script src="https://kit.fontawesome.com/b038bcffea.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+
+    <!-- Sección de Estilos -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/administracion.css">
+
+    <!-- Sección de fuentes-->
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+
+
+    <link rel="icon" href="/img/LogoLibreria.png">
+
+</head>
+
+<body>
+
+    <section id="menu">
+        <div class="logo">
+            <img src="/img/LogoLibreria.png" alt="Logo-Libreria">
+            <h2>Administrador</h2>
+        </div>
+        <div class="items">
+            <li><i class="fa-solid fa-users"></i><a href="perfilAdmin.html">Usuarios</a></li>
+            <li><i class="fa-solid fa-bars-staggered"></i><a href="adminGenero.html">Género</a></li>
+            <li><i class="fa-solid fa-book"></i><a href="adminLibro.html">Libros</a></li>
+            <li><i class="fa-solid fa-feather"></i><a href="adminAutor.html">Autor</a></li>
+            <li><i class="fa-solid fa-percent"></i><a href="adminDescuento.html">Descuento</a></li>
+            <li><i class="fa-solid fa-handshake"></i><a href="adminSocioComer.html">Socio Comercial</a></li>
+            <li><i class="fa-solid fa-location-crosshairs"></i><a href="#">Punto de entrega</a></li>
+            <li><i class="fa-solid fa-screwdriver-wrench"></i><a href="adminParametros.html">Parámetros Generales</a></li>
+            <li><i class="fa-solid fa-chart-pie"></i><a href="#">Reportes</a></li>
+        </div>
+    </section>
+
+    <section id="interfase">
+        <div class="navegacion">
+            <div class="n1">
+                <div class="busqueda">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Busqueda">
+                </div>
+            </div>
+
+            <div class="perfil">
+                <i class="far fa-bell"></i>
+                <img src="/img/admin-perfil/profile.png" alt="perfil">
+            </div>
+        </div>
+
+        <h3 class="i-name">Dashboard</h3>
+
+        <div class="valores">
+            <div class="caja-valores">
+                <i class="fas fa-users"></i>
+                <div>
+                    <h3>8.267</h3>
+                    <span>Usuarios</span>
+                </div>
+            </div>
+            <div class="caja-valores">
+                <i class="fas fa-shopping-cart"></i>
+                <div>
+                    <h3>8.267</h3>
+                    <span>Ventas</span>
+                </div>
+            </div>
+            <div class="caja-valores">
+                <i class="fas fa-book"></i>
+                <div>
+                    <h3>8.267</h3>
+                    <span>Libros</span>
+                </div>
+            </div>
+            <div class="caja-valores">
+                <i class="fas fa-feather"></i>
+                <div>
+                    <h3>8.267</h3>
+                    <span>Autores</span>
+                </div>
+            </div>
+        </div>
+
+        <dir class="tabla">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td>Nombre</td>
+                        <td>Registrado</td>
+                        <td>Estado</td>
+                        <td>Role</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="usuarios">
+                            <img src="img/admin-perfil/profile.png" alt="">
+                            <div class="people-de">
+                                <h5>Cristian Salazar</h5>
+                                <p>csalazarg@ucenfotec.ac.cr</p>
+                            </div>
+                        </td>
+                        <td class="people-registro">
+                            <h5>05/04/2022</h5>
+
+                        </td>
+                        <td class="activo">
+                            <p>Activo</p>
+                        </td>
+                        <td class="role">
+                            <p>Usuario</p>
+                        </td>
+                        <td class="edit">
+                            <a href="#">Edit</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </dir>
+    </section>
+
+</body>
+
+</html>
