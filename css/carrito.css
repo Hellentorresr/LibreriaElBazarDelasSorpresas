@@ -1,0 +1,331 @@
+/*--- Actualizado: Abril 9, 2022 v3---*/
+
+
+/*--- Configuraciones generales ---*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 300;
+    width: 100%;
+    font-family: 'Merriweather', serif;
+    background-color: rgb(243, 235, 225);
+}
+
+.small-container {
+    max-width: 75%;
+    margin: auto;
+    background: white;
+    padding: 100px;
+}
+
+h1,
+h2,
+h4,
+p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 55px;
+    font-family: 'Merriweather', serif;
+}
+
+h2 {
+    font-size: 34px;
+    font-family: 'Merriweather', serif;
+}
+
+p {
+    font-size: 21px;
+    font-family: 'Merriweather', serif;
+}
+
+
+/*--- Cabecera ---*/
+
+.header {
+    position: sticky;
+    width: 100%;
+    height: 150px;
+    top: 0;
+    bottom: 0;
+}
+
+.cabecera {
+    display: flex;
+    flex-direction: row;
+    gap: 30%;
+    height: 75px;
+    width: 100%;
+    background-color: #28594b;
+}
+
+.enlace {
+    line-height: 75px;
+}
+
+.cabecera .logo {
+    width: 160px;
+    border-radius: 10px;
+    height: 120px;
+    margin: 8px 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.cabecera h1 {
+    width: 50%;
+    display: inline-block;
+    font-size: 30px;
+    line-height: 75px;
+    color: #fff;
+}
+
+
+/*---Articulos en el carrito ---*/
+
+.pagina-carrito {
+    margin: auto;
+    display: flex;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    text-align: center;
+    border: 0.5px solid #297350;
+}
+
+.info-carrito {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+span {
+    display: block;
+}
+
+th {
+    text-align: left;
+    padding: 5px;
+    color: #ffffff;
+    background: #297350;
+    font-weight: normal;
+}
+
+td {
+    padding: 10px 5px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+td input {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a {
+    color: #297350;
+    font-size: 12px;
+}
+
+td img {
+    width: 100px;
+    height: 150px;
+    margin-right: 10px;
+}
+
+.info-pago {
+    width: 50%;
+}
+
+
+/*--- Libro Fan ---*/
+
+.libro-fan {
+    margin-bottom: 10px;
+    border: 1px solid #297350;
+    text-align: center;
+}
+
+.libro-fan .titulo {
+    font-size: 36px;
+}
+
+.libro-fan .fan-monto {
+    font-size: 14px;
+}
+
+.libro-fan .fan-texto {
+    font-size: 14px;
+}
+
+
+/*--- Descuentos ---*/
+
+.descuentos {
+    margin-bottom: 10px;
+    border: 1px solid #297350;
+    text-align: center;
+}
+
+.descuentos .titulo-desc {
+    font-size: 36px;
+}
+
+.descuentos .ingreso-cupon {
+    margin-bottom: 10px;
+}
+
+.btn-cup {
+    padding: 10px 20px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #b57c00;
+    color: #fff;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.btn-cup:hover {
+    background: #fad60d;
+    cursor: pointer;
+}
+
+
+/*--- Envío ---*/
+
+.envio {
+    margin-bottom: 10px;
+    border: 1px solid #297350;
+    text-align: center;
+}
+
+.titulo-env {
+    font-size: 36px;
+}
+
+.envio .butones {
+    margin-bottom: 10px;
+}
+
+
+/*--- Precio Total ---*/
+
+.precio-total {
+    border: 1px solid #616161;
+    text-align: center;
+}
+
+.precio-total table {
+    width: 100%;
+}
+
+
+/*--- Butón de pago ---*/
+
+.sec-pago {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-pago,
+.btn-conf-pago {
+    padding: 10px 20px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #b57c00;
+    color: #fff;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.btn-pago:hover,
+.btn-conf-pago:hover {
+    background: #fad60d;
+    cursor: pointer;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*--- Confirmación Pago ---*/
+
+.confirmacion {
+    display: flex;
+    justify-content: flex-end;
+}

@@ -1,0 +1,471 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: rgb(243, 235, 225);
+}
+
+.header {
+    position: sticky;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    margin-bottom: 5px;
+    background-color: #28594b;
+}
+
+.cabecera {
+    display: flex;
+    flex-direction: row;
+    gap: 48%;
+    height: 75px;
+    width: 100%;
+    background-color: #28594b;
+}
+
+.enlace {
+    line-height: 75px;
+}
+
+.cabecera .logo {
+    width: 160px;
+    border-radius: 10px;
+    height: 80px;
+    margin: 8px 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.cabecera h1 {
+    width: 50%;
+    display: inline;
+    font-size: 30px;
+    line-height: 75px;
+    color: #fff;
+}
+
+
+/*Estilos para el nav o segundo contenedor en este momento color amarrillo*/
+
+.nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: #b57c00;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+    margin-left: 20px;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fad60d;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+
+/*Fin de la cabecera despues de aqui agregar el resto*/
+
+#sct-registro {
+    margin: auto;
+    padding: 15px;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 5px 0 10px rgb(0, 0, 0, .6);
+}
+
+.img_contenedor {
+    background-image: url('../img/librosColumna.jpg');
+    width: 50%;
+    background-size: cover;
+    border-radius: 5px;
+    background-position-x: 80%;
+}
+
+#sct-registro .contentBx {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+#sct-registro .contentBx .formBx {
+    width: 50%;
+}
+
+#sct-registro .contentBx .formBx h2 {
+    color: #607d8b;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #b57c00;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+#sct-registro .contentBx .formBx .inputBx {
+    margin-bottom: 20px;
+}
+
+.linea {
+    border-bottom: 1px solid black;
+    margin: 20px auto 20px auto;
+}
+
+#sct-registro .contentBx .formBx .inputBx label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #607d8b;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+#sct-registro .contentBx .formBx .inputBx .contenedor-internoInput {
+    display: flex;
+    gap: 15px;
+}
+
+#sct-registro .contentBx .formBx .inputBx input {
+    width: 100%;
+    padding: 18px 10px;
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #2c2f30;
+    background: transparent;
+    border-radius: 30px;
+    text-align: center;
+}
+
+#sct-registro .contentBx .formBx .inputBx #slt-genero {
+    width: 100%;
+    padding: 10px 5px;
+    outline: none;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #445056;
+    background: transparent;
+}
+
+#sct-registro .contentBx .formBx .inputBx option {
+    text-align: center;
+}
+
+#sct-registro .contentBx .formBx .inputBx #slt-tipoIdentificacion {
+    width: 100%;
+    padding: 8px 5px;
+    height: 38px;
+    outline: none;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #445056;
+    background: transparent;
+    margin-bottom: 30px;
+}
+
+#txt-numCedula::placeholder {
+    font-size: 16px;
+    color: #5a6468;
+}
+
+#sct-registro .contentBx .formBx .inputBx select {
+    width: 100%;
+    padding: 8px 0px;
+    outline: none;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #445056;
+    background: transparent;
+}
+
+#sct-registro form select {
+    width: 100%;
+    padding: 5px 5px;
+    outline: none;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background: transparent;
+    border-radius: 30px;
+    text-align: center;
+}
+
+#sct-registro form input {
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.inputBx h3 {
+    outline: none;
+    font-weight: 400;
+    font-size: 18px;
+    color: #314021;
+    background: transparent;
+    border-radius: 30px;
+    display: inline;
+    padding: 10px;
+}
+
+.inputBx a {
+    font-size: 20px;
+    color: rgb(211, 44, 72);
+    letter-spacing: 1px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 5px 5px 10px;
+}
+
+
+/*button*/
+
+.inputBx .btn-oscuro {
+    width: 100%;
+    padding: 10px 20px;
+    background: #b57c00;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.inputBx .btn-oscuro:hover {
+    background: #fad60d;
+    cursor: pointer;
+}
+
+
+/* para la imagen que el usuario adjuntara como perfil */
+
+.form-file_action .titulo {
+    width: 100%;
+    text-align: center;
+}
+
+.form-file_action input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    display: none;
+}
+
+.form-file_result {
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    width: 70%;
+    height: 250px;
+    background-color: #f2f0f0;
+    border-radius: 8px;
+    border: 1px dashed rgb(158, 56, 104);
+    transition: background 0.3s linear;
+    z-index: 10;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.form-file_result::after {
+    content: 'Arrastre una imagen aqui o puede dar clic para elegir la Imagen';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: rgb(151, 13, 115);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    z-index: 100;
+    font-size: 18px;
+    padding: 8px 10px 0 5px;
+}
+
+.form-file_result img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 500;
+}
+
+.form-file_result--active {
+    background-color: #b57c00;
+}
+
+
+/*Responsive no necesario**/
+
+@media(max-width: 768px) {
+    .header {
+        display: none;
+    }
+    #sct-registro .imgBx {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    #sct-registro .contentBx {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    #sct-registro .contentBx .formBx {
+        width: 100%;
+        padding: 40px;
+        background: rgb(255, 255, 255, 0.9);
+        margin: 50px;
+        border-radius: 5px;
+    }
+    .footer {
+        align-items: center;
+        gap: 10%;
+        padding: 40px;
+    }
+    footer h3 {
+        font-size: 12px;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    .footer button {
+        margin-top: 10px;
+    }
+}
+
+
+/*Para mostrar los errores en la validacion*/
+
+.input-error {
+    border: 2px solid peru;
+}
+
+
+/*estilos para el warning de la contrasenna*/
+
+.warnings {
+    width: 100%;
+    color: rgba(200, 44, 17, 0.75);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/*contrasenna*/
+
+.contraUl {
+    font-size: 16px;
+    color: #384b24;
+}
+
+
+/*warning de la confirmacion de contrasenna*/
+
+#warningContrasenna {
+    font-size: 16px;
+}
+
+
+/*Boton mapa*/
+
+.botonUbicacion {
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.botonUbicacion button {
+    width: 150px;
+    height: 100px;
+}
+
+
+/*Footer*/
+
+.footer {
+    margin-top: 75px;
+    width: 100%;
+    background-color: #2c3740;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    gap: 40%;
+}
+
+footer h3 {
+    padding: 50px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+
+footer button {
+    padding: 8px 20px;
+    background: #525c592f;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    height: 50px;
+    margin-top: 30px;
+}
+
+footer button a {
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+}

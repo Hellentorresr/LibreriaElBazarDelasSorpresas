@@ -1,0 +1,182 @@
+/*--- Actualizado: Abril 9, 2022 v3---*/
+
+
+/* Atributos globales */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 300;
+    width: 100%;
+    background: rgb(204, 204, 204);
+}
+
+hr {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+h2,
+h4,
+p {
+    margin: 0;
+}
+
+.page {
+    background: #fff;
+    display: block;
+    margin: 3rem auto 3rem auto;
+    position: relative;
+    box-shadow: 0 0 0.5cm rgba(0, 0, 0.1);
+}
+
+.page[size='A4'] {
+    width: 21cm;
+    height: 29.7cm;
+    overflow-x: hidden;
+}
+
+
+/* Sección Superior */
+
+.cabecera {
+    color: #fff;
+    padding: 20px;
+    height: 75px;
+    background-color: 297350;
+}
+
+.cabecera .fecha,
+.cabecera .consecutivo {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.cabecera .consecutivo-electronico {
+    max-width: 275px;
+}
+
+.fecha .fecha-emision {
+    max-width: 240px;
+    float: right;
+    margin-top: 10px;
+}
+
+
+/* Segunda sección */
+
+.fecha-emision .emision,
+.fecha-emision .clave {
+    display: block;
+}
+
+.fecha-emision .emision span,
+.fecha-emision .clave span {
+    float: right;
+    margin-left: 30px;
+}
+
+
+/* Información del emisor */
+
+.emisor {
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.emisor .titulo {
+    font-weight: 400;
+    float: left;
+}
+
+.titulo .emisor-datos {
+    font-size: 15px;
+}
+
+.factura .factura-info {
+    font-weight: 400;
+    text-align: right;
+}
+
+.factura .factura-datos {
+    font-size: 15px;
+}
+
+
+/* Billing to */
+
+.cliente {
+    padding: 20px;
+}
+
+.cliente .titulo-cliente {
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.cliente .cliente-sec {
+    width: 50%;
+    float: left;
+    font-size: 18px;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.cliente .sub-titulo,
+.cliente .nombre {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+
+/* Tabla */
+
+.tabla {
+    padding: 0 20px;
+}
+
+.tabla table {
+    width: 100%;
+}
+
+.tabla table,
+th,
+td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #616161;
+    border-collapse: collapse;
+}
+
+
+/* Calculo */
+
+.calculo .calculo-total {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 25%;
+    position: absolute;
+    right: 10px;
+}
+
+.calculo .total {
+    font-weight: bold;
+}
+
+
+/* Pie de Página */
+
+.pie .pie-pagina {
+    padding: 15px;
+    margin-top: 300px;
+    margin-bottom: 25px;
+    width: 75%;
+}
+
+
+/*Agregar todo entre un NAV y usar Flex*/

@@ -1,0 +1,57 @@
+/*--- Actualizado: Abril 9, 2022 v2---*/
+
+
+/*--- Configuraciones generales ---*/
+
+h1 {
+    font-size: 55;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 34;
+    padding: 10px;
+}
+
+p {
+    font-size: 21;
+    padding: 10px;
+}
+
+body {
+    background-color: #F3EBE1;
+}
+
+.img-sn {
+    border-radius: 8px;
+    width: 80%;
+    height: auto;
+}
+
+
+/*-- Cuerpo --*/
+
+.seccionDos {
+    padding: 5px;
+}
+
+.cuerpo {
+    text-align: center;
+}
+
+.contenido-cuerpo {
+    display: flex;
+    height: auto;
+    width: auto;
+    align-items: center;
+}
+
+.sobre-nosotros-texto {
+    flex-direction: row;
+    align-items: center;
+}
+
+.sobre-nosotros-texto p {
+    vertical-align: middle;
+    text-align: center;
+}

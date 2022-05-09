@@ -1,0 +1,138 @@
+body {
+    font-family: 'Merriweather', serif;
+    color: #607d8b;
+}
+*{
+
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+ 
+  transition: all .2s linear;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:25px;
+  min-height: 100vh;
+  border-radius: 20px;
+  
+  background:  rgb(243, 235, 225);
+}
+
+.container form{
+  padding:20px;
+  width:700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  border-radius: 20px;
+}
+
+.container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.container form .row .col{
+  flex:1 1 250px;
+}
+
+.container form .row .col .title{
+  font-size: 18px;
+  color: #607d8b;
+  padding-bottom: 5px;
+ 
+}
+
+.container form .row .col .inputBox{
+  margin:15px 0;
+}
+
+.container form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+.txt-sennasExactas{
+
+}
+
+.container form .row .col .inputBox input. .txt-sennasExactas{
+  width: 100%;
+ 
+  padding:10px 15px;
+  font-size: 16px;
+  text-transform: none;
+  border-radius: 30px;
+}
+
+.container form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.container form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.container form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.container form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+ 
+}
+
+.container form .submit-btn{
+    width: 100%;
+    padding: 10px 20px;
+    background: #b57c00;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    
+}
+
+.submit-btn-1{
+    width: 100%;
+    padding: 10px 20px;
+    background: none;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: rgb(211, 44, 72);
+    font-weight: 500;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+}  
+.container form .submit-btn-1:hover{
+    background: rgb(231, 89, 89);;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+.container form .submit-btn:hover{
+    background: #fad60d;
+    cursor: pointer;
+}

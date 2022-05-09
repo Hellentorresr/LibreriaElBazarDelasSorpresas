@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    /* para q los elementos no se salgan del contenedor*/
+}
+
+body {
+    font-family: 'Merriweather', serif;
+}
+
+.img-portada {
+    height: 200px;
+    width: 300px;
+}
+
+#tbl-libros{
+    width: 80%;
+    margin: auto;
+   
+}
+
+
+tr th{
+   text-align: left;
+     padding: 10px 0;
+      color: #607d8b;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+}
+
+#tbl-libros a{
+    color: #fff;
+    text-decoration: none;
+    background-color: #28594b;
+    padding: 10px;
+    text-align: left;
+}
+
+
+#tbl-libros a:hover{
+    background-color: #b57c00;
+    
+}
+
+
+
+

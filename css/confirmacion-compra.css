@@ -1,0 +1,120 @@
+/*--- Actualizado: Abril 9, 2022 v3---*/
+
+* {
+    box-sizing: border-box;
+    /* para q los elementos no se salgan del contenedor*/
+}
+
+body {
+    font-family: 'Merriweather', serif;
+}
+
+section {
+    margin: auto;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 150px;
+    margin: auto;
+}
+
+.cabecera {
+    display: flex;
+    flex-direction: row;
+    height: 75px;
+    width: 100%;
+    background-color: #277350;
+}
+
+.enlace {
+    line-height: 75px;
+}
+
+.cabecera .logo {
+    width: 140px;
+    border-radius: 10px;
+    height: 60px;
+    margin: 5px 10px;
+}
+
+.cabecera h1 {
+    width: 50%;
+    display: inline;
+    font-size: 30px;
+    line-height: 75px;
+    color: #fff;
+    margin-left: 300px;
+}
+
+
+/*--- Cuerpo ---*/
+
+.cuerpo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.contenido .msj-conf {
+    font-size: 21px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.contenido .msj-detalles {
+    font-size: 21px;
+    padding: 10px;
+}
+
+
+/*--- Botones ---*/
+
+#btn-correo,
+#btn-listo {
+    position: absolute;
+}
+
+.btn-correo {
+    padding: 15px 32px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    right: 800;
+    background-color: #fff;
+    color: #b57c00;
+    border: 2px solid #b57c00;
+    border-radius: 30px;
+}
+
+.btn-retorno {
+    padding: 15px 32px;
+    background: #b57c00;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    letter-spacing: 1px;
+    color: #fff;
+    cursor: pointer;
+    right: 690;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.btn-retorno:hover {
+    background: #fad60d;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+.btn-correo:hover {
+    background: #fad60d;
+    cursor: pointer;
+    border: none;
+}

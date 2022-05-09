@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    /* para q los elementos no se salgan del contenedor*/
+}
+
+body {
+    font-family: 'Merriweather', serif;
+}
+
+
+/*Inician clases de header*/
+
+.headerTemplate {
+    /* height: 25vh; */
+    background: linear-gradient(#28594b 0%, #297350 50%, #f2c53d 50%, #b57c00 100%);
+    overflow: hidden;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo_div {
+    float: left;
+}
+
+.logo {
+    size: 80%;
+}
+
+.header-right {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: end;
+    padding-left: 20px;
+}
+
+.tituloHeader {
+    height: 50%;
+    font-size: 34px;
+    color: white;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.menu {
+    height: 50%;
+    overflow: hidden;
+    /* float: right;
+    vertical-align: middle; */
+    display: flex;
+    align-items: center;
+}
+
+.menuHidden {
+    display: none;
+}
+
+.menuItems {
+    width: 50%;
+    float: right;
+    overflow: hidden;
+}
+
+.menuItems a {
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 21px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.menuItems a:hover {
+    background-color: #F2B6A0;
+    color: black;
+}
+
+.remove {
+    display: none;
+}
+
+
+/*search*/
+
+.searchEnclosure {
+    width: 50%;
+    float: right;
+    margin-left: 15%;
+}
+
+.searchBox {
+    max-width: 500px;
+    height: 50px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.searchBox>i {
+    font-size: 18px;
+    color: #777;
+}
+
+.searchBox>input {
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-style: italic;
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .header-right {
+        float: none;
+    }
+    .titulo {
+        display: none;
+    }
+    .menu {
+        float: none;
+        display: block;
+    }
+    .menuItems {
+        float: none;
+    }
+    .searchEnclosure {
+        margin: 2px;
+        float: none;
+    }
+    .searchBox {
+        width: 305px;
+    }
+}
+
+
+/*Terminan clases de header*/
+
+
+/*Empiezan clases de footer*/
+
+.footer {
+    position: relative;
+    bottom: 0;
+    margin-top: 50px;
+    width: 100%;
+    background-color: #2c3740;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    gap: 40%;
+}
+
+footer h3 {
+    padding: 50px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+
+footer button {
+    padding: 8px 20px;
+    background: #525c592f;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    height: 50px;
+    margin-top: 30px;
+}
+
+footer button a {
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+
+/*Terminan clases de footer*/

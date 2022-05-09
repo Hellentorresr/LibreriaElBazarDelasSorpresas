@@ -1,0 +1,51 @@
+/*version1.3*/
+h1{
+    font-size: 51px;
+}
+
+p{
+    font-size: 21px;
+}
+
+.historia-global{
+    padding: 200px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+}
+
+.historia-global-2{
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+}
+
+.historia-fondo-arriba{
+    height: 30px; 
+    background-image: url('/img/leaves.jpg');
+     border-radius: 15px;
+}
+
+.historia-title{
+    display:flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    padding-top: 30px; 
+    padding-bottom: 30px;
+}
+
+.historia-parrafo{
+    display:flex; 
+    flex-direction:column; 
+    justify-content: center; 
+    padding-bottom: 50px; 
+}
+.historia-fondo-abajo{
+    height: 30px;
+     background-image: url('/img/leaves.jpg');
+     border-radius: 15px;
+}
+
+.parrafo{
+    padding-bottom: 20px;
+}

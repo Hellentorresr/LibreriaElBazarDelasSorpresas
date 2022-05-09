@@ -1,0 +1,357 @@
+* {
+    box-sizing: border-box;
+    /* para q los elementos no se salgan del contenedor*/
+}
+
+
+/* version 1.0 4-10-22 */
+
+body {
+    font-family: 'Merriweather', serif;
+}
+
+.header {
+    position: sticky;
+    width: 100%;
+    height: 150px;
+    top: 0;
+    bottom: 0;
+}
+
+.cabecera {
+    display: flex;
+    flex-direction: row;
+    height: 90px;
+    width: 100%;
+    background-color: #28594b;
+    gap: 20%;
+}
+
+.cabecera .logo {
+    line-height: 100%;
+    width: 150px;
+    border-radius: 10px;
+    height: 120px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.box {
+    margin: 20px 200px 10px;
+    max-width: 400px;
+    width: 500px;
+    line-height: 90px;
+}
+
+.box .search-box {
+    position: relative;
+    height: 50px;
+    max-width: 150px;
+    margin: auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+.search-box input {
+    position: absolute;
+    height: 100%;
+    width: 500px;
+    border-radius: 25px;
+    background: #fff;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.search-box .icon {
+    position: absolute;
+    right: -350px;
+    top: 0;
+    width: 50px;
+    background: #f2c53d;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+.titulo_cabecera {
+    display: flex;
+    position: relative;
+}
+
+.cabecera h1 {
+    /* display: inline-block; */
+    font-size: 30px;
+    line-height: 90px;
+    color: #fff;
+}
+
+
+/*segundo contenedor*/
+
+nav {
+    height: 60px;
+    background-color: #b57c00;
+}
+
+.enlace {
+    position: absolute;
+    padding: 20px 50px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    margin-top: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+nav ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fad60d;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+.enlacedos {
+    display: none;
+}
+
+.opciones-header {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-inline-end: 20px;
+}
+
+#carrito-ico {
+    max-width: 100px;
+}
+
+
+/*estilos para el menu icon amburgesa*/
+
+.checkbtn {
+    font-size: 40px;
+    color: #fff;
+    float: right;
+    line-height: 50px;
+    margin-right: 40px;
+    cursor: pointer;
+    /*ocultar el menu icon amburgesa**/
+    display: none;
+}
+
+
+/*ocultar la cajita del check point*/
+
+#check {
+    display: none;
+}
+
+
+/*elementos de perfil a partir de aca*/
+
+
+/*elementos de perfil a partir de aca*/
+
+#sct_cabecera_perfil {
+    /*height: 700px;*/
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content, permite manipular la forma en la que se acomodan los elementos hijos dentro del eje principal */
+    justify-content: space-evenly;
+    align-content: left;
+}
+
+.contenedor_imagenes {
+    max-width: 300 px;
+    position: static;
+    padding-left: 30px;
+}
+
+
+/*esconder las imagenes por default*/
+
+.mySlides {
+    display: none;
+}
+
+
+/* botones anterior y seguiente*/
+
+.carusel {
+    display: flex;
+    flex-direction: row;
+}
+
+.ctrl-ant,
+.ctrl-sig {
+    display: flex;
+    margin-top: 50%;
+}
+
+.ant,
+.sig {
+    cursor: pointer;
+    background-position-y: center;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #d09306;
+    font-weight: bold;
+    font-size: 34px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/*mover el boton siguiente a la derecha*/
+
+.sig {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.ant:hover,
+.sig:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* propiedades del fade*/
+
+.fade {
+    animation-name: none;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.atributos_libro {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.titulo {
+    font-size: 56px;
+    padding-bottom: 10px;
+}
+
+.subtitulo {
+    font-size: 34px;
+    padding-bottom: 10px;
+}
+
+.resenna {
+    font-size: 21px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    line-height: 1.5;
+}
+
+.listado_premios {
+    list-style-image: url(/img/bulletsv2.jpeg);
+    padding: 1%;
+    padding-left: 10%;
+    line-height: 1.5;
+    font-size: 21px;
+}
+
+.subtitulo_vinculo {
+    color: #a59821;
+    font-size: 34px;
+    padding-bottom: 10px;
+}
+
+.btn-oscuro {
+    width: 80%;
+    padding: 10px 20px;
+    background: #2c3740;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.btn-oscuro:hover {
+    background: #fad60d;
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 50px;
+    width: 100%;
+    background-color: #2c3740;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    gap: 40%;
+}
+
+footer h3 {
+    padding: 50px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+
+footer button {
+    padding: 8px 20px;
+    background: #525c592f;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    height: 50px;
+    margin-top: 30px;
+}
+
+footer button a {
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+}

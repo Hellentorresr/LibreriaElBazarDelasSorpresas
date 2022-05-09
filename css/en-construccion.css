@@ -1,0 +1,65 @@
+/*--- Actualizado: Abril 9, 2022 v3---*/
+
+
+/* Estilos Generales */
+
+h1 {
+    font-size: 55px;
+}
+
+p {
+    font-size: 21px;
+}
+
+
+/*--- Cuerpo ---*/
+
+.cuerpo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    margin: auto;
+    width: 90%;
+    height: 580px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 5px 0 10px rgb(0, 0, 0, .6);
+}
+
+.contenido .msj-conf {
+    font-size: 21px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.contenido .msj-detalles {
+    font-size: 21px;
+    padding: 10px;
+}
+
+li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+li span {
+    display: block;
+    font-size: 4.5rem;
+}
+
+@media all and (max-width: 768px) {
+    h1 {
+        font-size: calc(1.5rem * var(--smaller));
+    }
+    li {
+        font-size: calc(1.125rem * var(--smaller));
+    }
+    li span {
+        font-size: calc(3.375rem * var(--smaller));
+    }
+}

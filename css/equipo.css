@@ -1,0 +1,128 @@
+/*version 1.2*/
+h1{
+   font-size: 55px;
+}
+
+p{
+    font-size: 21px;
+}
+.main-box{
+    padding: 200px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+}
+
+.sobre-nosotros{
+    display: flex; 
+    justify-content: center; 
+    flex-direction: column;
+} 
+
+.sobre-nosotros-2{
+    height: 30px; 
+    background-image: url('/img/leaves.jpg');
+    border-radius: 15px;
+}
+
+.sobre-nosotros-3{
+    display:flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    padding-top: 30px; 
+    padding-bottom: 30px;
+}
+
+.sobre-nosotros-parrafo{
+    display:flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    padding-bottom: 60px;
+}
+
+.sobre-nosotros-fondo{
+    height: 30px; 
+    background-image: url('/img/leaves.jpg');
+    border-radius: 15px;
+}
+
+.valores-vision-mision{
+    display: flex; 
+    flex-direction: row; 
+    justify-content:space-between; 
+    column-gap: 30px; 
+    padding-top: 30px;
+    
+}
+
+.valores-titulo{
+    display:flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    padding-top: 50px; 
+    padding-bottom: 30px;
+}
+
+.valores-parrafo{
+    display:flex; 
+    flex-direction: row; 
+    justify-content: center;
+}
+
+.vision{
+    display:flex; 
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+.vision-titulo{
+    display:flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    padding-top: 10px; 
+    padding-bottom: 30px;
+}
+
+.vision-parrafo{
+    display:flex; 
+    flex-direction: row;
+     justify-content: center;
+}
+
+.mision{
+    display:flex;
+     flex-direction: column; 
+     justify-content: center;
+     
+}
+
+.mision-titulo{
+    display:flex;
+     flex-direction: row;
+      justify-content: center;
+      padding-top: 50px; 
+       padding-bottom: 30px;
+}
+
+.mision-parrafo{
+    display:flex;
+     flex-direction: row;
+      justify-content: center;
+}
+
+.fondo-sobre-nosotros-abajo{
+    height: 28px; 
+    background-image: url('/img/leaves.jpg');
+    border-radius: 15px;
+     margin-top: 50px;
+}
+
+.footer-box-copyright{
+    display: flex;
+     justify-content: center;
+}
+
+.footer-box-copyright p{
+    color: #fff;
+}
+
